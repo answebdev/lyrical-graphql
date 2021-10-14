@@ -22,7 +22,7 @@ class SongList extends Component {
   }
 }
 
-// Define the query:
+// Define the query
 const query = gql`
   {
     songs {
