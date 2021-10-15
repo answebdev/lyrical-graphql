@@ -16,7 +16,7 @@ class SongCreate extends Component {
       variables: {
         // Insert all of the query variables that we want to have sent to the mutation
         // (note: 'this.state.title' is the value of the text input -
-        // so, what we're doing is taking the value out of the input, assign it to a 'title' query variable,
+        // so what we're doing is taking the value out of the input, assign it to a 'title' query variable,
         // and then pass that into the mutation):
         title: this.state.title,
       },
