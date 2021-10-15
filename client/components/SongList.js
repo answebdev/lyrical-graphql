@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
+import query from '../queries/fetchSongs';
 
 class SongList extends Component {
   renderSongs() {
@@ -30,15 +31,16 @@ class SongList extends Component {
   }
 }
 
-// Define the query
-const query = gql`
-  {
-    songs {
-      id
-      title
-    }
-  }
-`;
+// Define the query - now in a separate file in the 'queries' folder,
+// which we can import and use in this file (see 'export' statement => we've name it 'query' when we imported it above)
+// const query = gql`
+//   {
+//     songs {
+//       id
+//       title
+//     }
+//   }
+// `;
 
 // Bond the query and the component together:
 // This is what actually executes the query when our SongList component gets rendered to the screen.
