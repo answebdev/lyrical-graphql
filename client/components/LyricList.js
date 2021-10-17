@@ -10,7 +10,7 @@ class LyricList extends Component {
       );
     });
   }
-
+// Fetch and update data after mutation is called (different approach)
   render() {
     return <ul className='collection'>{this.renderLyrics()}</ul>;
   }
