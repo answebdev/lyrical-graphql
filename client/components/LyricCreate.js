@@ -24,6 +24,7 @@ class LyricCreate extends Component {
           songId: this.props.songId,
         },
       })
+      // Clear input form after mutation is made
       .then(() => this.setState({ content: '' }));
   }
 
